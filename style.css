@@ -34,7 +34,8 @@ img {
 }
 
 .container {
-  max-width: 1145px;
+  box-sizing: border-box;
+  max-width: 1170px;
   margin-left:auto;
   margin-right: auto;
   padding: 0 15px;
@@ -94,6 +95,12 @@ img {
   opacity: 0.8;
 }
 
+.btn_small {
+  margin-top: 15px;
+  width: 140px;
+  height: 40px;
+  font-size: 12px;
+}
 /* Притветсвенная секция  */
 .main {
 font-size: 14px;
@@ -173,3 +180,134 @@ opacity: 0.7;
 .food-list_text-wrapper {
   pad: 10px, 0px;
 }
+
+/* Список еды */
+.order {
+background-color: #312f30;
+padding: 60px 0;
+}
+
+.order .container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-right: 100px;
+}
+
+.order_img {
+
+}
+
+.order_text {
+max-width: 370px;
+}
+
+.oroder_title {
+
+}
+
+.order_title {
+font-size: 44px;
+margin-bottom: 25px;
+}
+
+.order_desc {
+opacity: 0.7;
+margin-bottom: 15px;
+}
+
+.order_price {
+font-weight: 500;
+font-size: 20px; 
+letter-spacing: 0.1em;
+color: #f6762c;
+}
+
+
+.order__old_price {
+font-weight: 500;
+letter-spacing: 0.1em;
+text-decoration-line: line-through;
+color:#f6762c;
+opacity: 0.5;
+}
+
+.order_price + .order_price {
+  margin-left: 3%;
+}
+
+.order .btn {
+margin-top: 10px;
+}
+
+.product {
+padding: 150px 0;
+
+}
+
+.product .container {
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: center;
+}
+
+.product_card {
+box-sizing: border-box;
+width: 550px;
+min-height: 300px;
+padding: 60px 0 0 290px;
+background-color: #503333;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.product_card:nth-child(even) {
+  padding-left: 30px;
+  padding-right: 290px;
+}
+
+.product_title {
+margin-top: 15px;
+margin-bottom: 20px;
+font-size: 30px;
+font-size: 30px;
+}
+
+.product_desc {
+  margin-bottom: 10px;
+opacity: 0.7;
+}
+
+.product_price {
+font-weight: 5500;
+color: #f6762c;
+
+}
+
+.product__old_price {
+
+text-decoration-line: line-through;  
+opacity: 0.5 ;
+  width: 140px;
+  height: 40px;
+  font-size: 12px;
+  color: #f6762c;
+}
+
+.card-queen {
+  background-image: url(./images/product-1.jpg);
+}
+.card-hut {
+  background-image: url(./images/product-2.jpg);
+
+}.card-king {
+  background-image: url(./images/product-3.jpg);
+
+}.card-papa {
+  background-image: url(./images/product-4.jpg);
+}
+
+
